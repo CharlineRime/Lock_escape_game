@@ -1,0 +1,38 @@
+.salle-title-2 {
+  text-align: start;
+}
+
+.salle-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.salle-content .escape-btn {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.salle-witch-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.salle-text-green {
+  color: var(--green);
+}
+
+.salle-text-red {
+  color: var(--red);
+}
+
+.salle-text-pink {
+  color: var(--pink);
+}
+
+.salle-focus-card {
+  background-color: var(--zone);
+  border-radius: 40px;
+  padding: 20px;
+  width: fit-content;
+}

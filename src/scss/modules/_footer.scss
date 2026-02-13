@@ -1,0 +1,38 @@
+.footer-banner {
+  padding: 20px 0;
+  background-image: url("../img/img-banner-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 14px;
+
+  p {
+    font-size: 14px;
+  }
+
+  li {
+    padding: 0;
+  }
+}
+
+.footer-margin {
+  margin-top: 80px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: flex-end;
+  li {
+    padding: 0;
+  }
+}
+
+.footer-logo {
+  max-width: 10vw;
+}
+
+.footer-socials {
+  margin-top: 15px;
+  display: flex;
+  gap: 35px;
+}

@@ -1,0 +1,264 @@
+.reservation-room {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.reservation-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 10px;
+  transition:
+    background-color 0.3s ease,
+    border-radius 0.3s ease;
+}
+
+.reservation-card-hover {
+  transition:
+    background-color 0.3s ease,
+    border-radius 0.3s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--white);
+    transition:
+      width 0.3s ease,
+      left 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.reservation-clickable .reservation-card.active {
+  background-color: var(--zone);
+  border-radius: 40px;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--zone);
+  border: none;
+  padding: 15px 30px;
+  gap: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.reservation-form-center {
+  display: flex;
+  align-items: center;
+}
+
+.reservation-date-spacing {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar {
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  background: var(--zone);
+  padding: 20px;
+  border-radius: 5px;
+
+  .month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+
+  .year {
+    font-weight: 600;
+    margin-left: 10px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background 0.2s;
+
+    &:hover {
+      background: var(--zone);
+    }
+  }
+
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 15px;
+
+    span {
+      width: 50px;
+      text-align: center;
+    }
+  }
+
+  .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    button {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin: 2px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background 0.2s;
+
+      &:first-child {
+        grid-column: 3;
+      }
+
+      &:hover {
+        background: var(--accent-light);
+      }
+
+      &:focus {
+        background: var(--accent);
+        color: var(--white);
+      }
+
+      &.selected {
+        background: var(--accent);
+        color: var(--white);
+      }
+    }
+  }
+}
+
+.reservation-payment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.reservation-label {
+  color: var(--white);
+}
+
+.time-picker-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.time-slot {
+  background: #0f4a4a;
+  border: none;
+  border-radius: 12px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 80px;
+  font-size: 20px;
+
+  &.completed {
+    background: #2a2a2a;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  &:active:not(.completed) {
+    transform: scale(0.95);
+  }
+
+  &:focus {
+    background: var(--accent-light);
+  }
+}
+
+.reservation-players-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reservation-players-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  font-size: 40px;
+  font-weight: 300;
+  color: var(--white);
+  background-color: var(--accent);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: var(--accent-light);
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.reservation-players-btn-display {
+  text-align: center;
+  color: var(--white);
+  min-width: 120px;
+}
+
+.number {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.reservation-title-2 {
+  text-align: left;
+}
+
+.reservation-text-color {
+  color: var(--accent);
+}
+
+.reservation-btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}

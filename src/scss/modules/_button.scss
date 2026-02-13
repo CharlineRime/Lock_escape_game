@@ -1,0 +1,31 @@
+button {
+  padding: 15px 30px;
+  border-radius: 39px;
+  border: 1px solid var(--white);
+  background-color: transparent;
+  color: var(--white);
+  font-family: "Kode Mono";
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.escape-btn {
+  padding: 15px 30px;
+  border-radius: 39px;
+  border: 1px solid var(--white);
+  background: transparent;
+  color: var(--white);
+  font-family: "Kode Mono";
+  font-size: 16px;
+  margin-top: 50px;
+
+  &:hover {
+    background-color: var(--zone);
+    border-color: transparent;
+    box-shadow:
+      0 0 6px var(--zone),
+      inset 0 0 6px var(--zone);
+  }
+}

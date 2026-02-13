@@ -1,0 +1,547 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lock Escape Complex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" sizes="32x32" href="img/icon.png" />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <header>
+          <div class="row">
+            <div class="col-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="77"
+                height="82"
+                viewBox="0 0 77 82"
+                fill="none"
+              >
+                <path
+                  d="M73.3435 58.7593V23.1676C73.3437 22.7574 73.2318 22.3546 73.0195 22.001C72.8071 21.6475 72.502 21.3561 72.1359 21.1571L39.309 3.2885C38.961 3.09939 38.5696 3.00016 38.1717 3.00016C37.7738 3.00016 37.3825 3.09939 37.0345 3.2885L4.20756 21.1571C3.84145 21.3561 3.53638 21.6475 3.32403 22.001C3.11168 22.3546 2.9998 22.7574 3 23.1676V58.7593C3.00049 59.1689 3.11271 59.5709 3.32502 59.9237C3.53734 60.2765 3.84203 60.5673 4.20756 60.766L37.0345 78.6384C37.3825 78.8275 37.7738 78.9268 38.1717 78.9268C38.5696 78.9268 38.961 78.8275 39.309 78.6384L72.1359 60.766C72.5015 60.5673 72.8062 60.2765 73.0185 59.9237C73.2308 59.5709 73.343 59.1689 73.3435 58.7593Z"
+                  stroke="white"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4.14355 59.6025L37.0304 41.5838C37.3788 41.394 37.7709 41.2944 38.1696 41.2944C38.5682 41.2944 38.9603 41.394 39.3087 41.5838L72.4854 59.6025M38.1715 3.84078V40.9634"
+                  stroke="white"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="col header-wrapper">
+              <button class="burger-menu-btn" id="burgerBtn">
+                <i class="fas fa-bars"></i>
+              </button>
+              <ul class="header-nav" id="headerNav">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Mon compte</a></li>
+                <li><a href="reservation.html">Réserver</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="salle-witch.html">Les salles</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Choix de la salle</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="reservation-room">
+          <div class="col-3">
+            <a href="#" class="room-link">
+              <div
+                class="reservation-card salle-focus-card reservation-clickable"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="126"
+                  height="139"
+                  viewBox="0 0 126 139"
+                  fill="none"
+                >
+                  <path
+                    d="M124.5 100.995V37.4861C124.5 36.7541 124.305 36.0353 123.933 35.4045C123.562 34.7736 123.029 34.2536 122.389 33.8986L64.9885 2.01429C64.3801 1.67685 63.6958 1.49979 63 1.49979C62.3043 1.49979 61.6199 1.67685 61.0115 2.01429L3.6115 33.8986C2.97134 34.2536 2.4379 34.7736 2.06659 35.4045C1.69528 36.0353 1.49964 36.7541 1.5 37.4861V100.995C1.50086 101.726 1.69708 102.443 2.06832 103.073C2.43957 103.702 2.97235 104.221 3.6115 104.576L61.0115 136.467C61.6199 136.804 62.3043 136.981 63 136.981C63.6958 136.981 64.3801 136.804 64.9885 136.467L122.389 104.576C123.028 104.221 123.56 103.702 123.932 103.073C124.303 102.443 124.499 101.726 124.5 100.995Z"
+                    stroke="#22E100"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.5 102.5L61.0047 70.3478C61.614 70.0091 62.2995 69.8314 62.9966 69.8314C63.6937 69.8314 64.3793 70.0091 64.9885 70.3478L123 102.5M63 3V69.2408"
+                    stroke="#22E100"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <h2>L'antre ensorcelée</h2>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-3">
+            <a href="#" class="room-link">
+              <div class="reservation-card reservation-clickable">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="126"
+                  height="139"
+                  viewBox="0 0 126 139"
+                  fill="none"
+                >
+                  <path
+                    d="M124.5 100.995V37.4861C124.5 36.7541 124.305 36.0353 123.933 35.4045C123.562 34.7736 123.029 34.2536 122.389 33.8986L64.9885 2.01429C64.3801 1.67685 63.6958 1.49979 63 1.49979C62.3043 1.49979 61.6199 1.67685 61.0115 2.01429L3.6115 33.8986C2.97134 34.2536 2.4379 34.7736 2.06659 35.4045C1.69528 36.0353 1.49964 36.7541 1.5 37.4861V100.995C1.50086 101.726 1.69708 102.443 2.06832 103.073C2.43957 103.702 2.97235 104.221 3.6115 104.576L61.0115 136.467C61.6199 136.804 62.3043 136.981 63 136.981C63.6958 136.981 64.3801 136.804 64.9885 136.467L122.389 104.576C123.028 104.221 123.56 103.702 123.932 103.073C124.303 102.443 124.499 101.726 124.5 100.995Z"
+                    stroke="#E10000"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.5 102.5L61.0047 70.3478C61.614 70.0091 62.2995 69.8314 62.9966 69.8314C63.6937 69.8314 64.3793 70.0091 64.9885 70.3478L123 102.5M63 3V69.2408"
+                    stroke="#E10000"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <h2>Le pirate maudit</h2>
+              </div>
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="#" class="room-link">
+              <div class="reservation-card reservation-clickable">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="126"
+                  height="139"
+                  viewBox="0 0 126 139"
+                  fill="none"
+                >
+                  <path
+                    d="M124.5 100.995V37.4861C124.5 36.7541 124.305 36.0353 123.933 35.4045C123.562 34.7736 123.029 34.2536 122.389 33.8986L64.9885 2.01429C64.3801 1.67685 63.6958 1.49979 63 1.49979C62.3043 1.49979 61.6199 1.67685 61.0115 2.01429L3.6115 33.8986C2.97134 34.2536 2.4379 34.7736 2.06659 35.4045C1.69528 36.0353 1.49964 36.7541 1.5 37.4861V100.995C1.50086 101.726 1.69708 102.443 2.06832 103.073C2.43957 103.702 2.97235 104.221 3.6115 104.576L61.0115 136.467C61.6199 136.804 62.3043 136.981 63 136.981C63.6958 136.981 64.3801 136.804 64.9885 136.467L122.389 104.576C123.028 104.221 123.56 103.702 123.932 103.073C124.303 102.443 124.499 101.726 124.5 100.995Z"
+                    stroke="#B43B7D"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.5 102.5L61.0047 70.3478C61.614 70.0091 62.2995 69.8314 62.9966 69.8314C63.6937 69.8314 64.3793 70.0091 64.9885 70.3478L123 102.5M63 3V69.2408"
+                    stroke="#B43B7D"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <h2>La forêt enchantée</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Réservation</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <div class="reservation-date-spacing">
+            <form class="reservation-form">
+              <label for="date">Date</label>
+              <input
+                type="text"
+                id="date"
+                name="date"
+                placeholder="jj.mm.aaaa"
+                required
+              />
+            </form>
+            <br />
+            <div class="calendar">
+              <div class="month">
+                <a href="#" class="nav"><i class="fas fa-angle-left"></i></a>
+                <div>Avril <span class="year">2026</span></div>
+                <a href="#" class="nav"><i class="fas fa-angle-right"></i></a>
+              </div>
+              <div class="days">
+                <span>LU</span>
+                <span>MA</span>
+                <span>ME</span>
+                <span>JE</span>
+                <span>VE</span>
+                <span>SA</span>
+                <span>DI</span>
+              </div>
+              <div class="dates">
+                <button>
+                  <time>1</time>
+                </button>
+                <button>
+                  <time>2</time>
+                </button>
+                <button>
+                  <time>3</time>
+                </button>
+                <button>
+                  <time>4</time>
+                </button>
+                <button>
+                  <time>5</time>
+                </button>
+                <button>
+                  <time>6</time>
+                </button>
+                <button>
+                  <time>7</time>
+                </button>
+                <button>
+                  <time>8</time>
+                </button>
+                <button>
+                  <time>9</time>
+                </button>
+                <button>
+                  <time>10</time>
+                </button>
+                <button>
+                  <time>11</time>
+                </button>
+                <button>
+                  <time>12</time>
+                </button>
+                <button>
+                  <time>13</time>
+                </button>
+                <button>
+                  <time>14</time>
+                </button>
+                <button>
+                  <time>15</time>
+                </button>
+                <button>
+                  <time>16</time>
+                </button>
+                <button>
+                  <time>17</time>
+                </button>
+                <button class="today">
+                  <time>18</time>
+                </button>
+                <button>
+                  <time>19</time>
+                </button>
+                <button>
+                  <time>20</time>
+                </button>
+                <button>
+                  <time>21</time>
+                </button>
+                <button>
+                  <time>22</time>
+                </button>
+                <button>
+                  <time>23</time>
+                </button>
+                <button>
+                  <time>24</time>
+                </button>
+                <button>
+                  <time>25</time>
+                </button>
+                <button>
+                  <time>26</time>
+                </button>
+                <button>
+                  <time>27</time>
+                </button>
+                <button>
+                  <time>28</time>
+                </button>
+                <button>
+                  <time>29</time>
+                </button>
+                <button>
+                  <time>30</time>
+                </button>
+                <button>
+                  <time>31</time>
+                </button>
+              </div>
+            </div>
+            <div class="time-picker-container">
+              <button class="time-slot available">09:00</button>
+              <button class="time-slot available">10:30</button>
+              <button class="time-slot available">12:00</button>
+              <button class="time-slot available">13:30</button>
+              <button class="time-slot available">15:00</button>
+              <button class="time-slot completed">16:30</button>
+              <button class="time-slot available">18:00</button>
+              <button class="time-slot completed">19:30</button>
+              <button class="time-slot available">21:00</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="row">
+            <div class="col reservation-players-section">
+              <button
+                class="reservation-players-btn reservation-players-btn-minus"
+                id="decrementBtn"
+              >
+                -
+              </button>
+              <div class="reservation-players-btn-display">
+                <div class="number" id="counter">3</div>
+                <div class="label">joueurs</div>
+              </div>
+              <button
+                class="reservation-players-btn reservation-players-btn-plus"
+                id="incrementBtn"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <form class="reservation-form">
+                <label for="name">Nom</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Holmes"
+                  required
+                />
+              </form>
+            </div>
+            <div class="col-6">
+              <form class="reservation-form">
+                <label for="surname">Prénom</label>
+                <input
+                  type="text"
+                  id="surname"
+                  name="surname"
+                  placeholder="Sherlock "
+                  required
+                />
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-7">
+              <form class="reservation-form">
+                <label for="email">Adresse mail</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="detective.holmes@email.com"
+                  required
+                />
+              </form>
+            </div>
+            <div class="col-5">
+              <form class="reservation-form">
+                <label for="phone">Téléphone</label>
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  placeholder="079 12 34 56 78"
+                  required
+                />
+              </form>
+            </div>
+          </div>
+          <div class="row reservation-form-center">
+            <div class="col-7">
+              <form class="reservation-form">
+                <label for="discount">Code de réduction ou bon cadeau </label>
+                <input
+                  type="text"
+                  id="discount"
+                  name="discount"
+                  placeholder="123 456"
+                  required
+                />
+              </form>
+            </div>
+            <div class="col-4">
+              <button class="escape-btn">
+                <span>Valider</span>
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="reservation-payment">
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="sur-place"
+                    name="payment"
+                    value="sur-place"
+                    checked
+                  />
+                  <label class="reservation-label" for="sur-place"
+                    >Paiement sur place</label
+                  >
+                </div>
+
+                <div class="radio-option">
+                  <input type="radio" id="twint" name="payment" value="twint" />
+                  <label class="reservation-label" for="twint">TWINT</label>
+                </div>
+
+                <div class="radio-option">
+                  <input type="radio" id="carte" name="payment" value="carte" />
+                  <label class="reservation-label" for="carte"
+                    >Carte bancaire</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <h2 class="reservation-title-2">Résumé de la réservation</h2>
+            </div>
+            <div class="col-3 reservation-text-color">
+              <p>Date</p>
+              <p>Heure</p>
+              <p>Salle</p>
+              <p>Joueurs</p>
+              <p>Paiement</p>
+              <p>Prix</p>
+            </div>
+            <div class="col-4">
+              <p>17/04/2026</p>
+              <p>15:00</p>
+              <p>L‘antre de la sorcière</p>
+              <p>3 joueurs</p>
+              <p>Sur place</p>
+              <p>165.-</p>
+            </div>
+            <div class="col-3 offset-2 reservation-btn">
+              <button class="escape-btn">
+                <span>Valider</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-banner footer-margin">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <svg
+              class="footer-logo"
+              xmlns="http://www.w3.org/2000/svg"
+              width="265"
+              height="93"
+              viewBox="0 0 265 93"
+              fill="none"
+            >
+              <path
+                d="M0 90.875V1.25H8.0625V83.187H42.375V90.875H0ZM192.812 70.125C192.812 73.167 192.23 76.021 191.062 78.687C189.938 81.354 188.374 83.687 186.374 85.687C184.374 87.687 182.041 89.271 179.374 90.437C176.708 91.563 173.855 92.125 170.812 92.125H164.438C161.395 92.125 158.52 91.563 155.812 90.437C153.145 89.271 150.812 87.687 148.812 85.687C146.812 83.687 145.23 81.354 144.062 78.687C142.938 76.021 142.374 73.167 142.374 70.125V22C142.374 18.9583 142.938 16.1042 144.062 13.4375C145.23 10.7708 146.812 8.4375 148.812 6.4375C150.812 4.4375 153.145 2.875 155.812 1.75C158.52 0.5833 161.395 0 164.438 0H170.812C173.855 0 176.708 0.5833 179.374 1.75C182.041 2.875 184.374 4.4375 186.374 6.4375C188.374 8.4375 189.938 10.7708 191.062 13.4375C192.23 16.1042 192.812 18.9583 192.812 22V25.625L184.751 26.875V22C184.751 20 184.374 18.1458 183.624 16.4375C182.874 14.6875 181.855 13.1667 180.562 11.875C179.27 10.5833 177.751 9.5625 176.001 8.8125C174.292 8.0625 172.438 7.6875 170.438 7.6875H164.812C162.812 7.6875 160.938 8.0625 159.188 8.8125C157.48 9.5625 155.958 10.5833 154.624 11.875C153.333 13.1667 152.312 14.6875 151.562 16.4375C150.812 18.1458 150.438 20 150.438 22V70.125C150.438 72.125 150.812 74 151.562 75.75C152.312 77.458 153.333 78.979 154.624 80.313C155.958 81.604 157.48 82.625 159.188 83.375C160.938 84.125 162.812 84.5 164.812 84.5H170.438C172.438 84.5 174.292 84.125 176.001 83.375C177.751 82.625 179.27 81.604 180.562 80.313C181.855 78.979 182.874 77.458 183.624 75.75C184.374 74 184.751 72.125 184.751 70.125V65.25L192.812 66.563V70.125ZM254.562 90.875L220.812 46.0625L254.562 1.25H264.562L230.124 46.0625L264.562 90.875H254.562ZM210.812 90.875V1.25H218.874V90.875H210.812Z"
+                fill="white"
+              />
+              <path
+                d="M88.5732 5.88544C89.3626 5.93562 90.1322 6.16078 90.8262 6.5456L90.8281 6.54657L123.653 24.78C124.486 25.242 125.181 25.9188 125.665 26.7399L125.836 27.0534C126.21 27.7961 126.406 28.6182 126.405 29.4548V65.7761C126.405 66.7284 126.15 67.6632 125.665 68.485L125.666 68.486C125.182 69.308 124.486 69.9843 123.656 70.446L90.8281 88.6843L90.8262 88.6852C90.0319 89.1257 89.1399 89.3561 88.2344 89.3561C87.3286 89.3561 86.4358 89.1257 85.6416 88.6852L85.6396 88.6843L52.8145 70.446C51.9816 69.9836 51.2873 69.3079 50.8037 68.488C50.3199 67.6676 50.0637 66.7328 50.0625 65.78V29.4548C50.0624 28.5011 50.3173 27.5645 50.8008 26.7429C51.2847 25.921 51.9807 25.2428 52.8154 24.78L85.6406 6.54657L85.6416 6.5456C86.4345 6.10584 87.3271 5.8747 88.2344 5.8747L88.5732 5.88544ZM59.334 67.2048L88.2334 83.2614L117.26 67.1354L88.2324 51.0476L59.334 67.2048ZM56.0625 29.8386V62.1599L85.2344 45.8493V13.6354L56.0625 29.8386ZM91.2344 45.8513L120.405 62.0183V29.8386L91.2344 13.6354V45.8513Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="col-5 offset-5">
+            <ul class="footer-nav">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="#">Mon compte</a></li>
+              <li><a href="reservation.html">Réserver</a></li>
+              <li><a href="tarifs.html">Tarifs</a></li>
+              <li><a href="salle-witch.html">Les salles</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <p>Lock Escape Complex</p>
+            <p>Rue des Archives 17, 1205 Genève</p>
+            <br />
+            <p>contact@lock-escape.ch</p>
+          </div>
+          <div class="col-2 offset-6">
+            <p>Nous suivre :</p>
+            <div class="footer-socials">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+              >
+                <path
+                  d="M8.7 0H21.3C26.1 0 30 3.9 30 8.7V21.3C30 23.6074 29.0834 25.8203 27.4518 27.4518C25.8203 29.0834 23.6074 30 21.3 30H8.7C3.9 30 0 26.1 0 21.3V8.7C0 6.39262 0.916605 4.17974 2.54817 2.54817C4.17974 0.916605 6.39262 0 8.7 0ZM8.4 3C6.96783 3 5.59432 3.56893 4.58162 4.58162C3.56893 5.59432 3 6.96783 3 8.4V21.6C3 24.585 5.415 27 8.4 27H21.6C23.0322 27 24.4057 26.4311 25.4184 25.4184C26.4311 24.4057 27 23.0322 27 21.6V8.4C27 5.415 24.585 3 21.6 3H8.4ZM22.875 5.25C23.3723 5.25 23.8492 5.44754 24.2008 5.79917C24.5525 6.15081 24.75 6.62772 24.75 7.125C24.75 7.62228 24.5525 8.09919 24.2008 8.45082C23.8492 8.80246 23.3723 9 22.875 9C22.3777 9 21.9008 8.80246 21.5492 8.45082C21.1975 8.09919 21 7.62228 21 7.125C21 6.62772 21.1975 6.15081 21.5492 5.79917C21.9008 5.44754 22.3777 5.25 22.875 5.25ZM15 7.5C16.9891 7.5 18.8968 8.29018 20.3033 9.6967C21.7098 11.1032 22.5 13.0109 22.5 15C22.5 16.9891 21.7098 18.8968 20.3033 20.3033C18.8968 21.7098 16.9891 22.5 15 22.5C13.0109 22.5 11.1032 21.7098 9.6967 20.3033C8.29018 18.8968 7.5 16.9891 7.5 15C7.5 13.0109 8.29018 11.1032 9.6967 9.6967C11.1032 8.29018 13.0109 7.5 15 7.5ZM15 10.5C13.8065 10.5 12.6619 10.9741 11.818 11.818C10.9741 12.6619 10.5 13.8065 10.5 15C10.5 16.1935 10.9741 17.3381 11.818 18.182C12.6619 19.0259 13.8065 19.5 15 19.5C16.1935 19.5 17.3381 19.0259 18.182 18.182C19.0259 17.3381 19.5 16.1935 19.5 15C19.5 13.8065 19.0259 12.6619 18.182 11.818C17.3381 10.9741 16.1935 10.5 15 10.5Z"
+                  fill="white"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="30"
+                viewBox="0 0 16 30"
+                fill="none"
+              >
+                <path
+                  d="M10.6667 17.25H14.4762L16 11.25H10.6667V8.25C10.6667 6.705 10.6667 5.25 13.7143 5.25H16V0.21C15.5032 0.1455 13.6274 0 11.6465 0C7.50933 0 4.57143 2.4855 4.57143 7.05V11.25H0V17.25H4.57143V30H10.6667V17.25Z"
+                  fill="white"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="29"
+                height="30"
+                viewBox="0 0 29 30"
+                fill="none"
+              >
+                <path
+                  d="M17.259 12.7031L28.0549 0H25.4963L16.1226 11.0297L8.63554 0H0L11.3219 16.6791L0 30H2.55852L12.4578 18.3523L20.3645 30H29L17.2583 12.7031H17.259ZM13.7549 16.8258L12.6076 15.165L3.48029 1.94953H7.41L14.7755 12.615L15.9226 14.2758L25.4975 28.1391H21.5682L13.7549 16.8265V16.8258Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
