@@ -134,19 +134,19 @@ label {
   background-color: var(--black);
 }
 
-.glass-rectangle {
-  width: 600px;
-  height: 70px;
-  margin-top: -230px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+// .glass-rectangle {
+//   width: 600px;
+//   height: 70px;
+//   margin-top: -230px;
+//   background: rgba(255, 255, 255, 0.15);
+//   backdrop-filter: blur(15px);
+//   -webkit-backdrop-filter: blur(15px);
+//   margin-left: 30px;
+//   border-radius: 20px;
+//   border: 1px solid rgba(255, 255, 255, 0.3);
 
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+//   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
