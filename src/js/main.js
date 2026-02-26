@@ -42,7 +42,7 @@ document.addEventListener("click", (e) => {
 const canvas = document.getElementById("canvas3d");
 if (canvas) {
   const app = new Application(canvas);
-  app.load("https://prod.spline.design/LzT3AAfpbXaD9aKM/scene.splinecode");
+  app.load("https://prod.spline.design/pW2zyj3hL0Hs-BUk/scene.splinecode");
 }
 
 // Burger menu functionality
