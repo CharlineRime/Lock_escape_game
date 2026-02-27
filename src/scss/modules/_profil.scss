@@ -1,0 +1,54 @@
+.compte-photo-text {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.profil-text-align {
+  display: flex;
+  gap: 30px;
+}
+.profil-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.profil-infos {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.rabais-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rabais-legend {
+  text-align: center;
+  font-size: 13px;
+}
+
+.profil-button-left {
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+
+.profil-button-right {
+  margin-left: 80px;
+  margin-bottom: 30px;
+}
+
+.profil-section {
+  border-radius: 24px;
+  background: var(--zone);
+}
+
+.profil-img {
+  width: 100%;
+}

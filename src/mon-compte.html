@@ -52,7 +52,7 @@
               </button>
               <ul class="header-nav" id="headerNav">
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="mon-compte.html">Mon compte</a></li>
+                <li><a href="#">Mon compte</a></li>
                 <li><a href="reservation.html">Réserver</a></li>
                 <li><a href="tarifs.html">Tarifs</a></li>
                 <li><a href="salle-witch.html">Les salles</a></li>
@@ -65,98 +65,50 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1>Choix de la salle</h1>
+          <h1>Données personnelles</h1>
         </div>
       </div>
-      <div class="row">
-        <div class="reservation-room">
-          <div class="col-3">
-            <a href="salle-witch.html" class="room-link">
-              <div class="reservation-card">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="126"
-                  height="139"
-                  viewBox="0 0 126 139"
-                  fill="none"
-                >
-                  <path
-                    d="M124.5 100.995V37.4861C124.5 36.7541 124.305 36.0353 123.933 35.4045C123.562 34.7736 123.029 34.2536 122.389 33.8986L64.9885 2.01429C64.3801 1.67685 63.6958 1.49979 63 1.49979C62.3043 1.49979 61.6199 1.67685 61.0115 2.01429L3.6115 33.8986C2.97134 34.2536 2.4379 34.7736 2.06659 35.4045C1.69528 36.0353 1.49964 36.7541 1.5 37.4861V100.995C1.50086 101.726 1.69708 102.443 2.06832 103.073C2.43957 103.702 2.97235 104.221 3.6115 104.576L61.0115 136.467C61.6199 136.804 62.3043 136.981 63 136.981C63.6958 136.981 64.3801 136.804 64.9885 136.467L122.389 104.576C123.028 104.221 123.56 103.702 123.932 103.073C124.303 102.443 124.499 101.726 124.5 100.995Z"
-                    stroke="#22E100"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3.5 102.5L61.0047 70.3478C61.614 70.0091 62.2995 69.8314 62.9966 69.8314C63.6937 69.8314 64.3793 70.0091 64.9885 70.3478L123 102.5M63 3V69.2408"
-                    stroke="#22E100"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <h2>L'antre ensorcelée</h2>
+      <div class="row profil-section">
+        <div class="row">
+          <div class="col-7">
+            <div class="profil-infos">
+              <img src="img/profil_pic.png" alt="Photo de profil" />
+              <div class="profil-text-align">
+                <div class="reservation-text-color profil-text">
+                  <p>Nom</p>
+                  <p>Prénom</p>
+                  <p>E-mail</p>
+                  <p>Téléphone</p>
+                </div>
+                <div class="profil-text">
+                  <p>Rime</p>
+                  <p>Charline</p>
+                  <p>charline.rime@gmail.com</p>
+                  <p>079 123 45 67</p>
+                </div>
               </div>
-            </a>
+            </div>
+          </div>
+          <div class="col-4 offset-1 rabais-align">
+            <img src="img/rabais.png" alt="Rabais actuel" />
+            <h2>Rabais actuel</h2>
+            <p class="rabais-legend">
+              Valable pour votre prochaine réservation
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <button class="escape-btn profil-button-left">
+              <span>Modifier </span>
+            </button>
           </div>
 
-          <div class="col-3">
-            <a href="salle-pirate.html" class="room-link">
-              <div class="reservation-card">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="126"
-                  height="139"
-                  viewBox="0 0 126 139"
-                  fill="none"
-                >
-                  <path
-                    d="M124.5 100.995V37.4861C124.5 36.7541 124.305 36.0353 123.933 35.4045C123.562 34.7736 123.029 34.2536 122.389 33.8986L64.9885 2.01429C64.3801 1.67685 63.6958 1.49979 63 1.49979C62.3043 1.49979 61.6199 1.67685 61.0115 2.01429L3.6115 33.8986C2.97134 34.2536 2.4379 34.7736 2.06659 35.4045C1.69528 36.0353 1.49964 36.7541 1.5 37.4861V100.995C1.50086 101.726 1.69708 102.443 2.06832 103.073C2.43957 103.702 2.97235 104.221 3.6115 104.576L61.0115 136.467C61.6199 136.804 62.3043 136.981 63 136.981C63.6958 136.981 64.3801 136.804 64.9885 136.467L122.389 104.576C123.028 104.221 123.56 103.702 123.932 103.073C124.303 102.443 124.499 101.726 124.5 100.995Z"
-                    stroke="#E10000"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3.5 102.5L61.0047 70.3478C61.614 70.0091 62.2995 69.8314 62.9966 69.8314C63.6937 69.8314 64.3793 70.0091 64.9885 70.3478L123 102.5M63 3V69.2408"
-                    stroke="#E10000"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <h2>Le pirate maudit</h2>
-              </div>
-            </a>
-          </div>
-          <div class="col-3">
-            <a href="salle-forest.html" class="room-link">
-              <div class="reservation-card salle-focus-card">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="126"
-                  height="139"
-                  viewBox="0 0 126 139"
-                  fill="none"
-                >
-                  <path
-                    d="M124.5 100.995V37.4861C124.5 36.7541 124.305 36.0353 123.933 35.4045C123.562 34.7736 123.029 34.2536 122.389 33.8986L64.9885 2.01429C64.3801 1.67685 63.6958 1.49979 63 1.49979C62.3043 1.49979 61.6199 1.67685 61.0115 2.01429L3.6115 33.8986C2.97134 34.2536 2.4379 34.7736 2.06659 35.4045C1.69528 36.0353 1.49964 36.7541 1.5 37.4861V100.995C1.50086 101.726 1.69708 102.443 2.06832 103.073C2.43957 103.702 2.97235 104.221 3.6115 104.576L61.0115 136.467C61.6199 136.804 62.3043 136.981 63 136.981C63.6958 136.981 64.3801 136.804 64.9885 136.467L122.389 104.576C123.028 104.221 123.56 103.702 123.932 103.073C124.303 102.443 124.499 101.726 124.5 100.995Z"
-                    stroke="#B43B7D"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3.5 102.5L61.0047 70.3478C61.614 70.0091 62.2995 69.8314 62.9966 69.8314C63.6937 69.8314 64.3793 70.0091 64.9885 70.3478L123 102.5M63 3V69.2408"
-                    stroke="#B43B7D"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <h2>La forêt enchantée</h2>
-              </div>
-            </a>
+          <div class="col-4 offset-6">
+            <button class="escape-btn profil-button-right">
+              <span>Réserver une salle</span>
+            </button>
           </div>
         </div>
       </div>
@@ -165,58 +117,61 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1>Infos sur la salle</h1>
-          <h2 class="salle-title-2">La forêt enchantée</h2>
+          <h1>Album photo</h1>
         </div>
       </div>
+    </div>
+    <div class="container">
       <div class="row">
-        <div class="col-6 salle-content">
-          <div class="tarifs-text">
-            <p>
-              Vous pénétrez dans une forêt où la magie semble danser dans l’air
-              et où chaque arbre cache un secret.
-            </p>
-            <br />
-            <p>
-              Des fées, des créatures lumineuses et des plantes étranges vous
-              guident vers des énigmes anciennes, dissimulées parmi les rivières
-              scintillantes et les clairières mystérieuses.
-            </p>
-            <br />
-            <p>
-              Retrouvez les talismans perdus, assemblez les indices laissés par
-              les esprits de la forêt et rétablissez l’harmonie avant que la
-              magie ne s’éteigne. Observation, curiosité et esprit d’équipe
-              seront vos meilleurs alliés dans cette aventure féérique.
-            </p>
+        <div class="col-4">
+          <div class="col">
+            <img class="profil-img" src="img/photo_3.png" alt="Photo 3" />
           </div>
-
-          <button class="escape-btn">
-            <span>Réserver la salle</span>
-          </button>
+          <div class="row">
+            <div class="col-3 reservation-text-color compte-photo-text">
+              <p>Salle</p>
+              <p>Date</p>
+              <p>Chrono</p>
+            </div>
+            <div class="col-8 compte-photo-text">
+              <p>L'antre de la sorcière</p>
+              <p>-</p>
+              <p>-</p>
+            </div>
+          </div>
         </div>
-        <div class="col-4 offset-2">
-          <div class="row">
-            <div class="col-4 salle-witch-text salle-text-pink">
-              <p>Thème</p>
-              <p>Durée</p>
-              <p>Joueurs</p>
-              <p>Difficulté</p>
-              <p>Langue</p>
-              <p>Attention</p>
-            </div>
-            <div class="col-8 salle-witch-text">
-              <p>Aventure féérique</p>
-              <p>60 minutes</p>
-              <p>de 2 à 4 joueurs</p>
-              <p>3/5</p>
-              <p>Français</p>
-              <p>Claustrophibie</p>
-            </div>
+
+        <div class="col-4">
+          <div class="col">
+            <img class="profil-img" src="img/photo_2.png" alt="Photo 2" />
           </div>
           <div class="row">
-            <div class="col">
-              <img src="img/schema_forest.png" alt="Schéma hexagonal" />
+            <div class="col-3 reservation-text-color compte-photo-text">
+              <p>Salle</p>
+              <p>Date</p>
+              <p>Chrono</p>
+            </div>
+            <div class="col-8 compte-photo-text">
+              <p>Le pirate maudit</p>
+              <p>02.01.2025</p>
+              <p>56’ 37’’</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="col">
+            <img class="profil-img" src="img/photo_1.png" alt="Photo 1" />
+          </div>
+          <div class="row">
+            <div class="col-3 reservation-text-color compte-photo-text">
+              <p>Salle</p>
+              <p>Date</p>
+              <p>Chrono</p>
+            </div>
+            <div class="col-8 compte-photo-text">
+              <p>La forêt enchantée</p>
+              <p>01.04.2026</p>
+              <p>48’ 42’’</p>
             </div>
           </div>
         </div>
