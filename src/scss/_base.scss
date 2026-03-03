@@ -47,6 +47,11 @@ video {
   display: block;
 }
 
+img[src*="schema_"] {
+  width: 100%;
+  height: auto;
+}
+
 h1 {
   color: var(--white);
   font-family: "Kode Mono";
