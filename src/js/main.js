@@ -43,6 +43,27 @@ const canvas = document.getElementById("canvas3d");
 if (canvas) {
   const app = new Application(canvas);
   app.load("https://prod.spline.design/pW2zyj3hL0Hs-BUk/scene.splinecode");
+
+  // Prevent scroll on canvas - capture phase
+  document.addEventListener(
+    "wheel",
+    (e) => {
+      if (canvas.contains(e.target) || e.target === canvas) {
+        e.preventDefault();
+      }
+    },
+    { capture: true, passive: false },
+  );
+
+  document.addEventListener(
+    "touchmove",
+    (e) => {
+      if (canvas.contains(e.target) || e.target === canvas) {
+        e.preventDefault();
+      }
+    },
+    { capture: true, passive: false },
+  );
 }
 
 // Burger menu functionality
