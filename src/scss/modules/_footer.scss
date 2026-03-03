@@ -5,6 +5,7 @@
   background-position: center;
   background-repeat: no-repeat;
   font-size: 14px;
+  text-align: left;
 
   p {
     font-size: 14px;
@@ -35,4 +36,15 @@
   margin-top: 15px;
   display: flex;
   gap: 35px;
+}
+.footer-contact {
+  padding: 0 !important;
+
+  &::after {
+    display: none;
+  }
+
+  &:hover::after {
+    display: none;
+  }
 }

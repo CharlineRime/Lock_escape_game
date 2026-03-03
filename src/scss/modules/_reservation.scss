@@ -53,6 +53,7 @@
   border: none;
   padding: 15px 30px;
   gap: 8px;
+  margin-top: 20px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -160,6 +161,7 @@
 .reservation-payment {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .radio-option {
@@ -262,6 +264,8 @@
 
 .reservation-title-2 {
   text-align: left;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .reservation-text-color {
@@ -272,4 +276,14 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+}
+
+.reservation-text-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.reservation-btn-2 {
+  align-self: flex-end;
+  margin-top: 28px;
 }
