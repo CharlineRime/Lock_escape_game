@@ -38,9 +38,9 @@ document.addEventListener("click", (e) => {
   }
 });
 
-// Initialize 3D canvas if available
+// Initialize 3D canvas if available and not on mobile
 const canvas = document.getElementById("canvas3d");
-if (canvas) {
+if (canvas && window.innerWidth > 768) {
   const app = new Application(canvas);
   app.load("https://prod.spline.design/pW2zyj3hL0Hs-BUk/scene.splinecode");
 
