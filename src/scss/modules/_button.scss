@@ -19,6 +19,7 @@ button {
   color: var(--white);
   font-family: "Kode Mono";
   font-size: 16px;
+  transition: all 0.3s ease;
 
   &:hover {
     background-color: var(--zone);
