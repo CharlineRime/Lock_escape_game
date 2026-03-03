@@ -178,3 +178,25 @@ if (timeSlots.length > 0) {
     }
   });
 }
+// Room link selection with salle-focus-card class
+const roomLinks = document.querySelectorAll(".room-link");
+if (roomLinks.length > 0) {
+  roomLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      // Remove salle-focus-card class from all reservation-cards
+      const allReservationCards =
+        document.querySelectorAll(".reservation-card");
+      allReservationCards.forEach((card) => {
+        card.classList.remove("salle-focus-card");
+      });
+
+      // Add salle-focus-card class to the clicked room's card
+      const roomCard = link.querySelector(".reservation-card");
+      if (roomCard) {
+        roomCard.classList.add("salle-focus-card");
+      }
+    });
+  });
+}
