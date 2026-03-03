@@ -28,3 +28,9 @@ button {
       inset 0 0 6px var(--zone);
   }
 }
+
+a.escape-btn {
+  &::after {
+    display: none;
+  }
+}

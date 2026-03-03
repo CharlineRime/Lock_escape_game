@@ -134,3 +134,26 @@ if (calendarDates.length > 0) {
     });
   });
 }
+
+// Time slot selection with completed slots disabled
+const timeSlots = document.querySelectorAll(".time-slot");
+if (timeSlots.length > 0) {
+  timeSlots.forEach((timeSlot) => {
+    // Disable completed time slots
+    if (timeSlot.classList.contains("completed")) {
+      timeSlot.disabled = true;
+      timeSlot.setAttribute("disabled", "");
+      timeSlot.style.cursor = "not-allowed";
+      timeSlot.style.opacity = "0.5";
+    } else {
+      // Add click handler for available slots
+      timeSlot.addEventListener("click", (e) => {
+        e.preventDefault();
+        // Remove selected class from all time slots
+        timeSlots.forEach((slot) => slot.classList.remove("selected"));
+        // Add selected class to clicked slot
+        timeSlot.classList.add("selected");
+      });
+    }
+  });
+}
