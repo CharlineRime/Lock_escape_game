@@ -45,11 +45,11 @@
     padding: 20px;
     transition: right 0.3s ease;
     z-index: 1000;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid var(--zone);
 
     li {
       padding: 15px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid var(--zone);
 
       a {
         padding: 0;
@@ -87,7 +87,7 @@
       border-radius: 50%;
       padding: 0;
       background-color: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      border: 1px solid var(--zone);
       color: var(--accent);
       font-size: 18px;
       cursor: pointer;
@@ -95,7 +95,7 @@
 
       &:hover {
         border-color: var(--accent);
-        background-color: rgba(0, 169, 161, 0.1);
+        background-color: var(--zone);
       }
 
       &:active {
@@ -126,12 +126,12 @@
   background-color: var(--zone);
   border-radius: 25px;
   padding: 10px 15px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--zone);
   transition: all 0.3s ease;
 
   &:focus-within {
     border-color: var(--accent);
-    background-color: rgba(0, 169, 161, 0.1);
+    background-color: var(--zone);
   }
 }
 
@@ -145,7 +145,7 @@
   outline: none;
 
   &::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--zone);
   }
 
   &:focus {
