@@ -28,13 +28,15 @@
   }
 }
 
-.footer-logo {
-  max-width: 3vw;
+.footer-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footer-socials {
-  margin-top: 25px;
-  padding-bottom: 50px;
+  margin-top: 20px;
+  padding-bottom: 40px;
   display: flex;
   gap: 35px;
 
@@ -48,7 +50,7 @@
   }
 }
 .footer-socials-text {
-  margin-top: 15px;
+  margin-top: 40px;
 }
 
 .footer-contact {

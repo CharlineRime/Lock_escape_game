@@ -19,13 +19,14 @@
 
 html {
   --white: #ffffff;
+  --white-opacity: rgba(255, 255, 255, 0.7);
   --black: #000000;
   --accent: #ff8747;
   --accent-light: #ffc294;
   --zone: rgba(235, 239, 242, 0.1);
   --green: #6ff600;
   --red: #e10000;
-  --pink: #d100df;
+  --purple: #d100df;
 }
 
 body {

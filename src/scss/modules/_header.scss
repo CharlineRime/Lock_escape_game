@@ -72,6 +72,8 @@
   display: flex;
   justify-content: flex-end;
   transition: all 0.3s ease;
+  margin-top: -30px;
+  margin-right: 10px;
 
   @media (max-width: 768px) {
     display: none;
@@ -88,13 +90,13 @@
       padding: 0;
       background-color: transparent;
       border: 1px solid var(--zone);
-      color: var(--accent);
+      color: var(--white);
       font-size: 18px;
       cursor: pointer;
       transition: all 0.3s ease;
 
       &:hover {
-        border-color: var(--accent);
+        border-color: var(--white);
         background-color: var(--zone);
       }
 
@@ -130,7 +132,7 @@
   transition: all 0.3s ease;
 
   &:focus-within {
-    border-color: var(--accent);
+    border-color: var(--white);
     background-color: var(--zone);
   }
 }
@@ -145,7 +147,7 @@
   outline: none;
 
   &::placeholder {
-    color: var(--zone);
+    color: var(--white-opacity);
   }
 
   &:focus {
@@ -156,17 +158,23 @@
 .search-btn {
   background: none;
   border: none;
-  color: var(--accent);
+  color: var(--white);
   font-size: 16px;
   cursor: pointer;
   padding: 5px 10px;
   transition: color 0.3s ease;
 
   &:hover {
-    color: var(--accent-light);
+    color: var(--white);
   }
 
   &:active {
     transform: scale(0.95);
   }
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
