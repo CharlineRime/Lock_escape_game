@@ -200,3 +200,98 @@ if (roomLinks.length > 0) {
     });
   });
 }
+
+// Search bar functionality
+const searchBarWrapper = document.getElementById("searchBarWrapper");
+const searchIconBtn = document.getElementById("searchIconBtn");
+const searchInput = document.getElementById("searchInput");
+const searchBtn = document.getElementById("searchBtn");
+
+if (searchBarWrapper && searchIconBtn && searchInput && searchBtn) {
+  // Toggle expanded/collapsed on icon click
+  searchIconBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    searchBarWrapper.classList.remove("collapsed");
+    searchBarWrapper.classList.add("expanded");
+    searchInput.focus();
+  });
+
+  // Collapse search bar
+  function collapseSearch() {
+    searchBarWrapper.classList.add("collapsed");
+    searchBarWrapper.classList.remove("expanded");
+    searchInput.value = "";
+  }
+
+  // Define search mappings
+  const searchMappings = {
+    witch: "salle-witch.html",
+    sorcière: "salle-witch.html",
+    pirate: "salle-pirate.html",
+    forest: "salle-forest.html",
+    forêt: "salle-forest.html",
+    accueil: "index.html",
+    home: "index.html",
+    tarifs: "tarifs.html",
+    pricing: "tarifs.html",
+    reservation: "reservation.html",
+    réservation: "reservation.html",
+    book: "reservation.html",
+    compte: "mon-compte.html",
+    account: "mon-compte.html",
+    profil: "mon-compte.html",
+    profile: "mon-compte.html",
+  };
+
+  function performSearch() {
+    const searchTerm = searchInput.value.trim().toLowerCase();
+
+    if (!searchTerm) return;
+
+    // Check for exact or partial matches
+    const matchedPage = searchMappings[searchTerm];
+
+    if (matchedPage) {
+      // Create transition overlay and navigate
+      const overlay = document.querySelector(".transition-overlay");
+      if (overlay) {
+        overlay.classList.remove("opening");
+        overlay.classList.add("closing");
+      }
+
+      setTimeout(() => {
+        window.location.href = matchedPage;
+      }, 450);
+    } else {
+      // Show "no results" feedback
+      const searchBar = searchInput.parentElement;
+      searchBar.style.borderColor = "#e10000";
+      searchInput.placeholder = "Aucun résultat...";
+
+      // Reset after 2 seconds
+      setTimeout(() => {
+        searchBar.style.borderColor = "";
+        searchInput.placeholder = "Rechercher...";
+      }, 2000);
+    }
+  }
+
+  // Search on button click
+  searchBtn.addEventListener("click", performSearch);
+
+  // Search on Enter key
+  searchInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+      performSearch();
+    }
+  });
+
+  // Close search bar when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!searchBarWrapper.contains(e.target)) {
+      if (searchBarWrapper.classList.contains("expanded")) {
+        collapseSearch();
+      }
+    }
+  });
+}
