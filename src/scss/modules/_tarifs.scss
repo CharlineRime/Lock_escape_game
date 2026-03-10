@@ -11,4 +11,9 @@
 .tarifs-btn-center {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
