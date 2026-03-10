@@ -38,33 +38,32 @@ document.addEventListener("click", (e) => {
   }
 });
 
-// Initialize 3D canvas if available and not on mobile
-const canvas = document.getElementById("canvas3d");
-if (canvas && window.innerWidth > 768) {
-  const app = new Application(canvas);
-  app.load("https://prod.spline.design/pW2zyj3hL0Hs-BUk/scene.splinecode");
+// // Initialize 3D canvas if available and not on mobile
 
-  // Prevent scroll on canvas - capture phase
-  document.addEventListener(
-    "wheel",
-    (e) => {
-      if (canvas.contains(e.target) || e.target === canvas) {
-        e.preventDefault();
-      }
-    },
-    { capture: true, passive: false },
-  );
+// const canvas = document.getElementById("canvas3d");
+// const app = new Application(canvas);
+// app.load("https://prod.spline.design/pW2zyj3hL0Hs-BUk/scene.splinecode");
 
-  document.addEventListener(
-    "touchmove",
-    (e) => {
-      if (canvas.contains(e.target) || e.target === canvas) {
-        e.preventDefault();
-      }
-    },
-    { capture: true, passive: false },
-  );
-}
+// Prevent scroll on canvas - capture phase
+document.addEventListener(
+  "wheel",
+  (e) => {
+    if (canvas.contains(e.target) || e.target === canvas) {
+      e.preventDefault();
+    }
+  },
+  { capture: true, passive: false },
+);
+
+document.addEventListener(
+  "touchmove",
+  (e) => {
+    if (canvas.contains(e.target) || e.target === canvas) {
+      e.preventDefault();
+    }
+  },
+  { capture: true, passive: false },
+);
 
 // Player counter functionality
 const counterElement = document.getElementById("counter");
