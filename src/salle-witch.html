@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <title>Lock Escape Complex</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="scss/main.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,20 +19,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="icon" sizes="32x32" href="img/icon.png" />
   </head>
   <body>
     <div class="banner">
       <div class="container">
         <header>
-          <div class="row">
-            <div class="col-1">
+          <div class="row align-items-center">
+            <div class="col-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="47"
@@ -43,9 +41,6 @@
               </svg>
             </div>
             <div class="col header-wrapper">
-              <button class="burger-menu-btn" id="burgerBtn">
-                <i class="fas fa-bars"></i>
-              </button>
               <ul class="header-nav" id="headerNav">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="mon-compte.html">Mon compte</a></li>
@@ -89,96 +84,94 @@
           <h1>Choix de la salle</h1>
         </div>
       </div>
-      <div class="row">
-        <div class="reservation-room">
-          <div class="col-3">
-            <a href="salle-witch.html" class="room-link">
-              <div class="reservation-card salle-focus-card">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="126"
-                  height="139"
-                  viewBox="0 0 126 139"
-                  fill="none"
-                >
-                  <path
-                    d="M124.5 100.995V37.4861C124.5 36.7541 124.305 36.0353 123.933 35.4045C123.562 34.7736 123.029 34.2536 122.389 33.8986L64.9885 2.01429C64.3801 1.67685 63.6958 1.49979 63 1.49979C62.3043 1.49979 61.6199 1.67685 61.0115 2.01429L3.6115 33.8986C2.97134 34.2536 2.4379 34.7736 2.06659 35.4045C1.69528 36.0353 1.49964 36.7541 1.5 37.4861V100.995C1.50086 101.726 1.69708 102.443 2.06832 103.073C2.43957 103.702 2.97235 104.221 3.6115 104.576L61.0115 136.467C61.6199 136.804 62.3043 136.981 63 136.981C63.6958 136.981 64.3801 136.804 64.9885 136.467L122.389 104.576C123.028 104.221 123.56 103.702 123.932 103.073C124.303 102.443 124.499 101.726 124.5 100.995Z"
-                    stroke="var(--green)"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3.5 102.5L61.0047 70.3478C61.614 70.0091 62.2995 69.8314 62.9966 69.8314C63.6937 69.8314 64.3793 70.0091 64.9885 70.3478L123 102.5M63 3V69.2408"
-                    stroke="var(--green)"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <h2>L'antre ensorcelée</h2>
-              </div>
-            </a>
-          </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="salle-witch.html" class="room-link">
+            <div class="reservation-card salle-focus-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="126"
+                height="139"
+                viewBox="0 0 126 139"
+                fill="none"
+              >
+                <path
+                  d="M124.5 100.995V37.4861C124.5 36.7541 124.305 36.0353 123.933 35.4045C123.562 34.7736 123.029 34.2536 122.389 33.8986L64.9885 2.01429C64.3801 1.67685 63.6958 1.49979 63 1.49979C62.3043 1.49979 61.6199 1.67685 61.0115 2.01429L3.6115 33.8986C2.97134 34.2536 2.4379 34.7736 2.06659 35.4045C1.69528 36.0353 1.49964 36.7541 1.5 37.4861V100.995C1.50086 101.726 1.69708 102.443 2.06832 103.073C2.43957 103.702 2.97235 104.221 3.6115 104.576L61.0115 136.467C61.6199 136.804 62.3043 136.981 63 136.981C63.6958 136.981 64.3801 136.804 64.9885 136.467L122.389 104.576C123.028 104.221 123.56 103.702 123.932 103.073C124.303 102.443 124.499 101.726 124.5 100.995Z"
+                  stroke="var(--green)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3.5 102.5L61.0047 70.3478C61.614 70.0091 62.2995 69.8314 62.9966 69.8314C63.6937 69.8314 64.3793 70.0091 64.9885 70.3478L123 102.5M63 3V69.2408"
+                  stroke="var(--green)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h2>L'antre ensorcelée</h2>
+            </div>
+          </a>
+        </div>
 
-          <div class="col-3">
-            <a href="salle-pirate.html" class="room-link">
-              <div class="reservation-card">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="126"
-                  height="139"
-                  viewBox="0 0 126 139"
-                  fill="none"
-                >
-                  <path
-                    d="M124.5 100.995V37.4861C124.5 36.7541 124.305 36.0353 123.933 35.4045C123.562 34.7736 123.029 34.2536 122.389 33.8986L64.9885 2.01429C64.3801 1.67685 63.6958 1.49979 63 1.49979C62.3043 1.49979 61.6199 1.67685 61.0115 2.01429L3.6115 33.8986C2.97134 34.2536 2.4379 34.7736 2.06659 35.4045C1.69528 36.0353 1.49964 36.7541 1.5 37.4861V100.995C1.50086 101.726 1.69708 102.443 2.06832 103.073C2.43957 103.702 2.97235 104.221 3.6115 104.576L61.0115 136.467C61.6199 136.804 62.3043 136.981 63 136.981C63.6958 136.981 64.3801 136.804 64.9885 136.467L122.389 104.576C123.028 104.221 123.56 103.702 123.932 103.073C124.303 102.443 124.499 101.726 124.5 100.995Z"
-                    stroke="#E10000"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3.5 102.5L61.0047 70.3478C61.614 70.0091 62.2995 69.8314 62.9966 69.8314C63.6937 69.8314 64.3793 70.0091 64.9885 70.3478L123 102.5M63 3V69.2408"
-                    stroke="#E10000"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <h2>Le pirate maudit</h2>
-              </div>
-            </a>
-          </div>
-          <div class="col-3">
-            <a href="salle-forest.html" class="room-link">
-              <div class="reservation-card">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="126"
-                  height="139"
-                  viewBox="0 0 126 139"
-                  fill="none"
-                >
-                  <path
-                    d="M124.5 100.995V37.4861C124.5 36.7541 124.305 36.0353 123.933 35.4045C123.562 34.7736 123.029 34.2536 122.389 33.8986L64.9885 2.01429C64.3801 1.67685 63.6958 1.49979 63 1.49979C62.3043 1.49979 61.6199 1.67685 61.0115 2.01429L3.6115 33.8986C2.97134 34.2536 2.4379 34.7736 2.06659 35.4045C1.69528 36.0353 1.49964 36.7541 1.5 37.4861V100.995C1.50086 101.726 1.69708 102.443 2.06832 103.073C2.43957 103.702 2.97235 104.221 3.6115 104.576L61.0115 136.467C61.6199 136.804 62.3043 136.981 63 136.981C63.6958 136.981 64.3801 136.804 64.9885 136.467L122.389 104.576C123.028 104.221 123.56 103.702 123.932 103.073C124.303 102.443 124.499 101.726 124.5 100.995Z"
-                    stroke="var(--purple)"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3.5 102.5L61.0047 70.3478C61.614 70.0091 62.2995 69.8314 62.9966 69.8314C63.6937 69.8314 64.3793 70.0091 64.9885 70.3478L123 102.5M63 3V69.2408"
-                    stroke="var(--purple)"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <h2>La forêt enchantée</h2>
-              </div>
-            </a>
-          </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="salle-pirate.html" class="room-link">
+            <div class="reservation-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="126"
+                height="139"
+                viewBox="0 0 126 139"
+                fill="none"
+              >
+                <path
+                  d="M124.5 100.995V37.4861C124.5 36.7541 124.305 36.0353 123.933 35.4045C123.562 34.7736 123.029 34.2536 122.389 33.8986L64.9885 2.01429C64.3801 1.67685 63.6958 1.49979 63 1.49979C62.3043 1.49979 61.6199 1.67685 61.0115 2.01429L3.6115 33.8986C2.97134 34.2536 2.4379 34.7736 2.06659 35.4045C1.69528 36.0353 1.49964 36.7541 1.5 37.4861V100.995C1.50086 101.726 1.69708 102.443 2.06832 103.073C2.43957 103.702 2.97235 104.221 3.6115 104.576L61.0115 136.467C61.6199 136.804 62.3043 136.981 63 136.981C63.6958 136.981 64.3801 136.804 64.9885 136.467L122.389 104.576C123.028 104.221 123.56 103.702 123.932 103.073C124.303 102.443 124.499 101.726 124.5 100.995Z"
+                  stroke="#E10000"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3.5 102.5L61.0047 70.3478C61.614 70.0091 62.2995 69.8314 62.9966 69.8314C63.6937 69.8314 64.3793 70.0091 64.9885 70.3478L123 102.5M63 3V69.2408"
+                  stroke="#E10000"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h2>Le pirate maudit</h2>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 offset-md-3 offset-lg-0">
+          <a href="salle-forest.html" class="room-link">
+            <div class="reservation-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="126"
+                height="139"
+                viewBox="0 0 126 139"
+                fill="none"
+              >
+                <path
+                  d="M124.5 100.995V37.4861C124.5 36.7541 124.305 36.0353 123.933 35.4045C123.562 34.7736 123.029 34.2536 122.389 33.8986L64.9885 2.01429C64.3801 1.67685 63.6958 1.49979 63 1.49979C62.3043 1.49979 61.6199 1.67685 61.0115 2.01429L3.6115 33.8986C2.97134 34.2536 2.4379 34.7736 2.06659 35.4045C1.69528 36.0353 1.49964 36.7541 1.5 37.4861V100.995C1.50086 101.726 1.69708 102.443 2.06832 103.073C2.43957 103.702 2.97235 104.221 3.6115 104.576L61.0115 136.467C61.6199 136.804 62.3043 136.981 63 136.981C63.6958 136.981 64.3801 136.804 64.9885 136.467L122.389 104.576C123.028 104.221 123.56 103.702 123.932 103.073C124.303 102.443 124.499 101.726 124.5 100.995Z"
+                  stroke="var(--purple)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3.5 102.5L61.0047 70.3478C61.614 70.0091 62.2995 69.8314 62.9966 69.8314C63.6937 69.8314 64.3793 70.0091 64.9885 70.3478L123 102.5M63 3V69.2408"
+                  stroke="var(--purple)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h2>La forêt enchantée</h2>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -191,7 +184,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-6 salle-content">
+        <div class="col-12 col-lg-6 salle-content">
           <div class="tarifs-text">
             <p>
               Vous êtes les apprentis sorciers envoyés en urgence dans l’antre
@@ -212,13 +205,15 @@
             </p>
           </div>
 
-          <a href="reservation.html" class="escape-btn">
-            <span>Réserver la salle</span>
-          </a>
+          <div class="text-center escape-btn-wrapper">
+            <a href="reservation.html" class="escape-btn">
+              <span>Réserver la salle</span>
+            </a>
+          </div>
         </div>
-        <div class="col-5 offset-1">
+        <div class="col-12 col-lg-5 offset-lg-1">
           <div class="row">
-            <div class="col-4 salle-witch-text salle-text-green">
+            <div class="col-6 col-md-3 salle-witch-text salle-text-green">
               <p>Thème</p>
               <p>Durée</p>
               <p>Joueurs</p>
@@ -226,7 +221,7 @@
               <p>Langue</p>
               <p>Attention</p>
             </div>
-            <div class="col-8 salle-witch-text">
+            <div class="col-6 col-md-9 salle-witch-text">
               <p>Sorcellerie</p>
               <p>60 minutes</p>
               <p>2 à 5 joueurs</p>
@@ -236,9 +231,9 @@
             </div>
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col-12">
               <img
-                class="schema-img"
+                class="schema-img img-fluid"
                 src="img/schema_witch.png"
                 alt="Schéma hexagonal"
               />
@@ -251,7 +246,7 @@
     <footer class="footer-banner footer-margin">
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-12 col-md-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="27"
@@ -265,7 +260,7 @@
               />
             </svg>
           </div>
-          <div class="col-6 offset-3">
+          <div class="col-12 col-md-6 offset-md-2 offset-lg-0">
             <ul class="footer-nav">
               <li><a href="index.html">Accueil</a></li>
               <li><a href="mon-compte.html">Mon compte</a></li>
@@ -276,13 +271,13 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-sm-12 footer-infos">
+          <div class="col-12 col-md-4 footer-infos">
             <p>Lock Escape Complex</p>
             <p>Rue des Archives 17, 1205 Genève</p>
             <p>079 123 45 67</p>
             <a href="#" class="footer-contact">contact@lock-escape.ch </a>
           </div>
-          <div class="col-4 offset-8 col-sm-4 offset-sm-8 col-md-2 offset-md-6">
+          <div class="col-12 col-md-4 offset-md-4 col-lg-2 offset-lg-6">
             <p class="footer-socials-text">Nous suivre :</p>
             <div class="footer-socials">
               <svg
@@ -326,6 +321,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>

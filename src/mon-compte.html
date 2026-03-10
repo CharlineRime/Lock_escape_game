@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <title>Lock Escape Complex</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="scss/main.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,8 +31,8 @@
     <div class="banner">
       <div class="container">
         <header>
-          <div class="row">
-            <div class="col-1">
+          <div class="row align-items-center">
+            <div class="col-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="47"
@@ -43,9 +47,6 @@
               </svg>
             </div>
             <div class="col header-wrapper">
-              <button class="burger-menu-btn" id="burgerBtn">
-                <i class="fas fa-bars"></i>
-              </button>
               <ul class="header-nav" id="headerNav">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a class="header-active" href="#">Mon compte</a></li>
@@ -86,27 +87,31 @@
         </div>
       </div>
       <div class="row profil-section">
-        <div class="row">
-          <div class="col-7">
+        <div class="row w-100">
+          <div class="col-12 col-lg-7">
             <div class="profil-infos">
               <img src="img/profil_pic.png" alt="Photo de profil" />
               <div class="profil-text-align">
-                <div class="reservation-text-color profil-text">
-                  <p>Nom</p>
-                  <p>Prénom</p>
-                  <p>E-mail</p>
-                  <p>Téléphone</p>
-                </div>
-                <div class="profil-text">
-                  <p>Rime</p>
-                  <p>Charline</p>
-                  <p>charline.rime@gmail.com</p>
-                  <p>079 123 45 67</p>
+                <div class="row">
+                  <div
+                    class="col-4 col-md-4 reservation-text-color profil-text"
+                  >
+                    <p>Nom</p>
+                    <p>Prénom</p>
+                    <p>E-mail</p>
+                    <p>Téléphone</p>
+                  </div>
+                  <div class="col-8 col-md-8 profil-text">
+                    <p>Rime</p>
+                    <p>Charline</p>
+                    <p>charline.rime@gmail.com</p>
+                    <p>079 123 45 67</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-4 offset-1 rabais-align">
+          <div class="col-12 col-md-3 offset-md-2 rabais-align">
             <img
               class="profil-rabais"
               src="img/rabais.png"
@@ -120,13 +125,17 @@
         </div>
 
         <div class="row">
-          <div class="col-2">
-            <button class="escape-btn profil-button-left">
-              <span>Modifier </span>
-            </button>
+          <div
+            class="col-6 offset-3 col-md-2 offset-md-0 d-flex justify-content-center d-md-block"
+          >
+            <a href="#" class="escape-btn profil-button-left">
+              <span>Modifier</span>
+            </a>
           </div>
 
-          <div class="col-4 offset-6">
+          <div
+            class="col-8 offset-2 col-md-3 offset-md-7 d-flex justify-content-center d-md-block"
+          >
             <a href="reservation.html" class="escape-btn profil-button-right">
               <span>Réserver une salle</span>
             </a>
@@ -144,17 +153,19 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
           <div class="col">
             <img class="profil-img" src="img/photo_3.png" alt="Photo 3" />
           </div>
           <div class="row">
-            <div class="col-3 reservation-text-color compte-photo-text">
+            <div
+              class="col-3 col-md-3 reservation-text-color compte-photo-text"
+            >
               <p>Salle</p>
               <p>Date</p>
               <p>Chrono</p>
             </div>
-            <div class="col-8 compte-photo-text">
+            <div class="col-8 col-md-7 compte-photo-text">
               <p>L'antre de la sorcière</p>
               <p>-</p>
               <p>-</p>
@@ -162,34 +173,38 @@
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
           <div class="col">
             <img class="profil-img" src="img/photo_2.png" alt="Photo 2" />
           </div>
           <div class="row">
-            <div class="col-3 reservation-text-color compte-photo-text">
+            <div
+              class="col-3 col-md-3 reservation-text-color compte-photo-text"
+            >
               <p>Salle</p>
               <p>Date</p>
               <p>Chrono</p>
             </div>
-            <div class="col-8 compte-photo-text">
+            <div class="col-8 col-md-7 compte-photo-text">
               <p>Le pirate maudit</p>
               <p>02.01.2025</p>
               <p>56’ 37’’</p>
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
           <div class="col">
             <img class="profil-img" src="img/photo_1.png" alt="Photo 1" />
           </div>
           <div class="row">
-            <div class="col-3 reservation-text-color compte-photo-text">
+            <div
+              class="col-3 col-md-3 reservation-text-color compte-photo-text"
+            >
               <p>Salle</p>
               <p>Date</p>
               <p>Chrono</p>
             </div>
-            <div class="col-8 compte-photo-text">
+            <div class="col-8 col-md-7 compte-photo-text">
               <p>La forêt enchantée</p>
               <p>01.04.2026</p>
               <p>48’ 42’’</p>
@@ -277,6 +292,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
