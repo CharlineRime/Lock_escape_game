@@ -66,34 +66,6 @@ if (canvas && window.innerWidth > 768) {
   );
 }
 
-// Burger menu functionality
-const burgerBtn = document.getElementById("burgerBtn");
-const headerNav = document.getElementById("headerNav");
-
-if (burgerBtn && headerNav) {
-  burgerBtn.addEventListener("click", () => {
-    headerNav.classList.toggle("active");
-  });
-
-  // Close menu when a link is clicked
-  const navLinks = headerNav.querySelectorAll("a");
-  navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      headerNav.classList.remove("active");
-    });
-  });
-
-  // Close menu when clicking outside
-  document.addEventListener("click", (e) => {
-    if (
-      !e.target.closest(".burger-menu-btn") &&
-      !e.target.closest(".header-nav")
-    ) {
-      headerNav.classList.remove("active");
-    }
-  });
-}
-
 // Player counter functionality
 const counterElement = document.getElementById("counter");
 const incrementBtn = document.getElementById("incrementBtn");
