@@ -267,3 +267,27 @@ if (searchBarWrapper && searchIconBtn && searchInput && searchBtn) {
     }
   });
 }
+
+// Burger menu functionality
+const burgerBtn = document.getElementById("burgerBtn");
+const headerNav = document.getElementById("headerNav");
+
+if (burgerBtn && headerNav) {
+  burgerBtn.addEventListener("click", () => {
+    headerNav.classList.toggle("active");
+  });
+
+  // Close menu when clicking on a link
+  headerNav.addEventListener("click", (e) => {
+    if (e.target.tagName === "A") {
+      headerNav.classList.remove("active");
+    }
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!burgerBtn.contains(e.target) && !headerNav.contains(e.target)) {
+      headerNav.classList.remove("active");
+    }
+  });
+}

@@ -1,12 +1,8 @@
 .reservation-room {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 100px;
-
-  @media (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
 }
 
 .reservation-card {
@@ -19,6 +15,11 @@
   transition:
     background-color 0.3s ease,
     border-radius 0.3s ease;
+
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .reservation-card-hover {
@@ -290,4 +291,10 @@
 .reservation-btn-2 {
   align-self: flex-end;
   margin-top: 28px;
+}
+
+@media (max-width: 767.98px) {
+  .reservation-btn {
+    justify-content: center;
+  }
 }
