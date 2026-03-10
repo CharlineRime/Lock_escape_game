@@ -33,6 +33,10 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  p {
+    margin: 0;
+  }
 }
 
 .footer-socials {
