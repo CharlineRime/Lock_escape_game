@@ -1,0 +1,96 @@
+.spline-iframe {
+  display: block;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+}
+
+.game-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition:
+    opacity 0.5s ease,
+    backdrop-filter 0.5s ease;
+}
+
+.game-overlay.fade-out {
+  opacity: 0;
+  backdrop-filter: blur(0px);
+  pointer-events: none;
+}
+
+.game-overlay-content {
+  text-align: center;
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.game-overlay.fade-out .game-overlay-content {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+.game-overlay-content p {
+  margin-bottom: 30px;
+}
+
+.game-start-btn {
+  font-size: 1.25rem;
+  margin-top: 50px;
+}
+
+.game-overlay-logo {
+  width: 10vw;
+  margin-bottom: 50px;
+}
+
+.room-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.mobile-message {
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 70px;
+  gap: 30px;
+}
+
+.mobile-message p {
+  font-size: 1.25rem;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .spline-iframe {
+    display: none;
+  }
+
+  .iframe-container {
+    display: none;
+  }
+
+  .game-overlay {
+    display: none;
+  }
+
+  .mobile-message {
+    display: flex;
+  }
+}

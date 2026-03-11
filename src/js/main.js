@@ -44,27 +44,6 @@ document.addEventListener("click", (e) => {
 // const app = new Application(canvas);
 // app.load("https://prod.spline.design/pW2zyj3hL0Hs-BUk/scene.splinecode");
 
-// Prevent scroll on canvas - capture phase
-document.addEventListener(
-  "wheel",
-  (e) => {
-    if (canvas.contains(e.target) || e.target === canvas) {
-      e.preventDefault();
-    }
-  },
-  { capture: true, passive: false },
-);
-
-document.addEventListener(
-  "touchmove",
-  (e) => {
-    if (canvas.contains(e.target) || e.target === canvas) {
-      e.preventDefault();
-    }
-  },
-  { capture: true, passive: false },
-);
-
 // Player counter functionality
 const counterElement = document.getElementById("counter");
 const incrementBtn = document.getElementById("incrementBtn");
@@ -288,5 +267,33 @@ if (burgerBtn && headerNav) {
     if (!burgerBtn.contains(e.target) && !headerNav.contains(e.target)) {
       headerNav.classList.remove("active");
     }
+  });
+}
+
+// Game overlay functionality
+const gameOverlay = document.getElementById("gameOverlay");
+const gameStartBtn = document.getElementById("gameStartBtn");
+
+if (gameOverlay && gameStartBtn) {
+  gameStartBtn.addEventListener("click", () => {
+    gameOverlay.classList.add("fade-out");
+    setTimeout(() => {
+      gameOverlay.style.display = "none";
+    }, 500);
+  });
+}
+
+// Prevent scroll on iframe
+const iframeContainer = document.querySelector(".iframe-container");
+
+if (iframeContainer) {
+  // Block body scroll when mouse enters iframe
+  iframeContainer.addEventListener("mouseenter", () => {
+    document.body.style.overflow = "hidden";
+  });
+
+  // Restore body scroll when mouse leaves iframe
+  iframeContainer.addEventListener("mouseleave", () => {
+    document.body.style.overflow = "";
   });
 }
