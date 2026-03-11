@@ -1,3 +1,15 @@
 .contact-social-header {
   margin-top: 100px;
 }
+
+.contact-align {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+.contact-text-color {
+  color: var(--accent);
+  width: 120px;
+  flex-shrink: 0;
+}

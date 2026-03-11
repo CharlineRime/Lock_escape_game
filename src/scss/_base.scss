@@ -136,6 +136,25 @@ label {
   background-color: var(--black);
 }
 
+.spline-iframe {
+  display: block;
+}
+
+.mobile-message {
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 100px;
+  gap: 30px;
+}
+
+.mobile-message p {
+  font-size: 20px;
+  color: var(--white);
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 55px;
@@ -143,5 +162,13 @@ label {
   }
   h2 {
     font-size: 20px;
+  }
+
+  .spline-iframe {
+    display: none;
+  }
+
+  .mobile-message {
+    display: flex;
   }
 }
