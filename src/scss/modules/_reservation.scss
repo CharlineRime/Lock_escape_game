@@ -227,6 +227,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .reservation-players-btn {
@@ -296,5 +301,6 @@
 @media (max-width: 767.98px) {
   .reservation-btn {
     justify-content: center;
+    padding-top: 50px;
   }
 }
