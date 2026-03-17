@@ -33,6 +33,37 @@
       <div class="container">
         <header>
           <div class="row">
+            <div class="col header-wrapper">
+              <ul class="header-nav-secondary" id="headerNav">
+                <li><a href="mon-compte.html">Mon compte</a></li>
+
+                <li><a href="contact.html">Contact et accès</a></li>
+                <li>
+                  <div
+                    class="search-bar-wrapper collapsed"
+                    id="searchBarWrapper"
+                  >
+                    <button class="search-icon-btn" id="searchIconBtn">
+                      <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-bar">
+                      <input
+                        type="text"
+                        class="search-input"
+                        id="searchInput"
+                        placeholder="Rechercher..."
+                        autocomplete="off"
+                      />
+                      <button class="search-btn" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
             <div class="col-3 col-md-1 header-logo" id="top">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,37 +94,38 @@
               </button>
               <ul class="header-nav" id="headerNav">
                 <li><a class="header-active" href="#top">Accueil</a></li>
-                <li><a href="mon-compte.html">Mon compte</a></li>
+
                 <li><a href="reservation.html">Réserver</a></li>
                 <li><a href="tarifs.html">Tarifs</a></li>
                 <li><a href="salle-witch.html">Les salles</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li>
-                  <div
-                    class="search-bar-wrapper collapsed"
-                    id="searchBarWrapper"
-                  >
-                    <button class="search-icon-btn" id="searchIconBtn">
-                      <i class="fas fa-search"></i>
-                    </button>
-                    <div class="search-bar">
-                      <input
-                        type="text"
-                        class="search-input"
-                        id="searchInput"
-                        placeholder="Rechercher..."
-                        autocomplete="off"
-                      />
-                      <button class="search-btn" id="searchBtn">
-                        <i class="fas fa-search"></i>
-                      </button>
-                    </div>
-                  </div>
-                </li>
               </ul>
             </div>
           </div>
         </header>
+        <!-- Menu mobile burger -->
+        <nav class="mobile-nav" id="mobileNav">
+          <ul class="mobile-nav-list">
+            <li><a class="header-active" href="#top">Accueil</a></li>
+            <li><a href="reservation.html">Réserver</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="salle-witch.html">Les salles</a></li>
+            <li><a href="mon-compte.html">Mon compte</a></li>
+            <li><a href="contact.html">Contact et accès</a></li>
+            <li>
+              <div class="search-bar-wrapper">
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Rechercher..."
+                  autocomplete="off"
+                />
+                <button class="search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="container">
         <div class="row">
@@ -111,6 +143,13 @@
               explorez les mystères et déverrouillez les secrets cachés… si vous
               osez.
             </p>
+          </div>
+          <div class="col-md-3 offset-md-2 col-4 offset-5">
+            <img
+              class="header-cat"
+              src="img/cat.png"
+              alt="Un chat qui chasse une mouche."
+            />
           </div>
         </div>
       </div>
@@ -215,10 +254,10 @@
           <div class="col-7 offset-2">
             <ul class="footer-nav">
               <li><a href="index.html">Accueil</a></li>
-              <li><a href="mon-compte.html">Mon compte</a></li>
-              <li><a href="reservation.html">Réserver</a></li>
-              <li><a href="tarifs.html">Tarifs</a></li>
               <li><a href="salle-witch.html">Les salles</a></li>
+              <li><a href="tarifs.html">Tarifs</a></li>
+              <li><a href="reservation.html">Réserver</a></li>
+              <li><a href="mon-compte.html">Mon compte</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>

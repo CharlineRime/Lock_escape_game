@@ -18,6 +18,46 @@ window.addEventListener("load", () => {
   }, 300);
 });
 
+// Mobile Burger Menu functionality
+function initBurgerMenu() {
+  const burgerButtons = document.querySelectorAll(".burger-menu-btn");
+  const mobileNav = document.getElementById("mobileNav");
+
+  burgerButtons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (mobileNav) {
+        mobileNav.classList.toggle("active");
+      }
+    });
+  });
+
+  // Close mobile menu when clicking on a link
+  if (mobileNav) {
+    const navLinks = mobileNav.querySelectorAll("a");
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileNav.classList.remove("active");
+      });
+    });
+  }
+
+  // Close menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (mobileNav && mobileNav.classList.contains("active")) {
+      if (
+        !e.target.closest(".burger-menu-btn") &&
+        !e.target.closest(".mobile-nav")
+      ) {
+        mobileNav.classList.remove("active");
+      }
+    }
+  });
+}
+
+// Initialize burger menu when DOM is ready
+document.addEventListener("DOMContentLoaded", initBurgerMenu);
+
 // Intercept all navigation links
 document.addEventListener("click", (e) => {
   const link = e.target.closest("a");
