@@ -23,6 +23,12 @@
     />
     <link rel="icon" sizes="32x32" href="img/icon.png?as=webp" />
 
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"
+    />
+
     <meta
       name="description"
       content="Une page de réservation pour le complexe d'escape game Lock Escape, offrant un jeu immersif et captivant pour les amateurs d'énigmes et d'aventures."
@@ -159,10 +165,9 @@
         </div>
       </div>
     </div>
-
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-3">
           <p
             class="footer-socials-text reservation-text-color contact-social-header"
           >
@@ -207,11 +212,7 @@
             </svg>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-3 offset-7 col-md-3 offset-md-9">
+        <div class="col-md-2 offset-md-7">
           <img
             class="contact-potions"
             src="img/potions.png"
@@ -219,7 +220,13 @@
           />
         </div>
       </div>
+      <div class="row">
+        <div class="col-12">
+          <div id="map" class="contact-map"></div>
+        </div>
+      </div>
     </div>
+
     <footer class="footer-banner">
       <div class="container">
         <div class="row">
@@ -240,10 +247,10 @@
           <div class="col-7 offset-2">
             <ul class="footer-nav">
               <li><a href="index.html">Accueil</a></li>
-              <li><a href="mon-compte.html">Mon compte</a></li>
-              <li><a href="reservation.html">Réserver</a></li>
-              <li><a href="tarifs.html">Tarifs</a></li>
               <li><a href="salle-witch.html">Les salles</a></li>
+              <li><a href="tarifs.html">Tarifs</a></li>
+              <li><a href="reservation.html">Réserver</a></li>
+              <li><a href="mon-compte.html">Mon compte</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
@@ -308,5 +315,30 @@
       </div>
     </footer>
     <script src="js/main.js" type="module"></script>
+
+    <!-- Leaflet JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+    <!-- Map initialization script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialiser la carte centrée sur Genève
+        const map = L.map("map").setView([46.2044, 6.1432], 13);
+
+        // Ajouter les tiles OpenStreetMap
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution: "&copy; OpenStreetMap contributors",
+          maxZoom: 19,
+        }).addTo(map);
+
+        // Ajouter un marqueur à l'adresse de Lock Escape (Rue des Archives 17, 1205 Genève)
+        L.marker([46.2012, 6.1399])
+          .bindPopup(
+            "<strong>Lock Escape Complex</strong><br>Rue des Archives 17<br>1205 Genève",
+          )
+          .addTo(map)
+          .openPopup();
+      });
+    </script>
   </body>
 </html>
