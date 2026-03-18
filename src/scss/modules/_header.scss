@@ -2,28 +2,30 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  position: relative;
   width: 100%;
 }
 
 .header-nav {
   display: flex;
-  height: 8vh;
+  height: 30px;
   gap: 10px;
   justify-content: flex-end;
   align-items: center;
   border-top: solid 1px var(--white);
+  margin-top: 30px;
+  padding-top: 40px;
+  width: 100%;
 }
 
 .header-nav-secondary {
   font-size: 0.9rem;
   display: flex;
-  height: 2vh;
+  height: 30px;
   gap: 0px;
   justify-content: flex-end;
   align-items: center;
-  padding-bottom: 40px;
-  margin-top: 30px;
+  margin-bottom: 0;
+  width: 100%;
 
   @media (max-width: 768px) {
     display: none;
@@ -32,8 +34,6 @@
 
 .header-active {
   color: var(--accent-light);
-  border-radius: 20px;
-  padding: 20px 20px;
 }
 
 .search-bar-wrapper {
