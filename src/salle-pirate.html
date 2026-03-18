@@ -37,38 +37,7 @@
       <div class="container">
         <header>
           <div class="row">
-            <div class="col header-wrapper">
-              <ul class="header-nav-secondary" id="headerNav">
-                <li><a href="mon-compte.html">Mon compte</a></li>
-
-                <li><a href="contact.html">Contact et accès</a></li>
-                <li>
-                  <div
-                    class="search-bar-wrapper collapsed"
-                    id="searchBarWrapper"
-                  >
-                    <button class="search-icon-btn" id="searchIconBtn">
-                      <i class="fas fa-search"></i>
-                    </button>
-                    <div class="search-bar">
-                      <input
-                        type="text"
-                        class="search-input"
-                        id="searchInput"
-                        placeholder="Rechercher..."
-                        autocomplete="off"
-                      />
-                      <button class="search-btn" id="searchBtn">
-                        <i class="fas fa-search"></i>
-                      </button>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-3 col-md-1 header-logo">
+            <div class="col-3 col-md-1 header-logo" id="top">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 232 128"
@@ -92,21 +61,52 @@
                 />
               </svg>
             </div>
-            <div class="col header-wrapper">
-              <button class="burger-menu-btn" id="burgerBtn">
-                <i class="fas fa-bars"></i>
-              </button>
-              <ul class="header-nav" id="headerNav">
-                <li><a href="index.html">Accueil</a></li>
+            <div class="col-6 offset-5">
+              <div class="header-wrapper">
+                <ul class="header-nav-secondary" id="headerNav">
+                  <li><a href="mon-compte.html">Mon compte</a></li>
 
-                <li><a href="reservation.html">Réserver</a></li>
-                <li><a href="tarifs.html">Tarifs</a></li>
-                <li>
-                  <a class="header-active" href="salle-witch.html"
-                    >Les salles</a
-                  >
-                </li>
-              </ul>
+                  <li><a href="contact.html">Contact et accès</a></li>
+                  <li>
+                    <div
+                      class="search-bar-wrapper collapsed"
+                      id="searchBarWrapper"
+                    >
+                      <button class="search-icon-btn" id="searchIconBtn">
+                        <i class="fas fa-search"></i>
+                      </button>
+                      <div class="search-bar">
+                        <input
+                          type="text"
+                          class="search-input"
+                          id="searchInput"
+                          placeholder="Rechercher..."
+                          autocomplete="off"
+                        />
+                        <button class="search-btn" id="searchBtn">
+                          <i class="fas fa-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col header-wrapper">
+                <button class="burger-menu-btn" id="burgerBtn">
+                  <i class="fas fa-bars"></i>
+                </button>
+                <ul class="header-nav" id="headerNav">
+                  <li><a href="index.html">Accueil</a></li>
+
+                  <li><a href="reservation.html">Réserver</a></li>
+                  <li><a href="tarifs.html">Tarifs</a></li>
+                  <li>
+                    <a class="header-active" href="salle-witch.html"
+                      >Les salles</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </header>
